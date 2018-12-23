@@ -1,0 +1,58 @@
+body {
+    background-color: #faf8d4;
+}
+
+.article-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    max-width: 114rem;
+    margin:0 auto;
+    height: 100%;
+}
+
+/* card */
+.card {
+    width: 100%;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.3);
+}
+
+.card--top-image {
+    width: 100%;
+    height: 25rem;
+    background-image:url(https://content.cawaii.media/articles/images/14868/original/575123d270382140adc79eed6021e7e4b91a5055.png?1500741424);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card--content {
+    padding:1rem;
+}
+
+.card--content-name {
+    font-size: 1.4rem;
+}
+
+.card--content-author {
+    color: #d5d5d5;
+}
+
+.card--link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all .2s;
+}
+
+.card--link:hover {
+    background-color: rgba(255,255,255,.3);
+}

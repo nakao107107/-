@@ -1,0 +1,58 @@
+.hero-image {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://www.tnm.jp/uploads/fckeditor/uid000094_201111071147588015884d.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title-container {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.title {
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    font-size: 5rem;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    font-size: 1.6rem;
+}
+
+.entry-btn {
+    color: white;
+    border: solid 1px white;
+    margin-top: 3rem;
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    -webkit-animation-delay: .5s;
+}
+
+.entry-btn:hover{
+    background-color: #f78733;
+    border: solid 1px #f78733;
+    color: white;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
